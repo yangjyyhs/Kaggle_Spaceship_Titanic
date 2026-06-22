@@ -109,11 +109,10 @@ Kaggle 競賽 [Spaceship Titanic](https://www.kaggle.com/competitions/spaceship-
 ## 6 個關鍵教訓
 
 1. **資料清理 ≠ 填平均值** — 用資料規則 (CryoSleep → 0 spending) 比 mean imputation 強很多
-2. **驗證每一條規則** — 從別人 notebook 抄的規則 11 條裡有 2 條完全錯
-3. **Target Encoding 必須 OOF + LOO** — 否則 in-sample leak 會讓模型在 train 學假關聯
-4. **越複雜不代表越好** — 最佳 CatBoost 是 Optimized Step 1，沒 Optuna、沒 stacking
-5. **Hard rules 要保守** — In-test-group consensus 看似合理但 drop 5.6%
-6. **CV ≠ Kaggle** — Optuna 找 CV 最佳反而 overfit；要忍住過度優化 CV 的誘惑
+2. **Target Encoding 必須 OOF + LOO** — 否則 in-sample leak 會讓模型在 train 學假關聯
+3. **越複雜不代表越好** — 最佳 CatBoost 是 Optimized Step 1，沒 Optuna、沒 stacking
+4. **Hard rules 要保守** — In-test-group consensus 看似合理但 drop 5.6%
+5. **CV ≠ Kaggle** — Optuna 找 CV 最佳反而 overfit；要忍住過度優化 CV 的誘惑
 
 ---
 
